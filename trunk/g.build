@@ -1,0 +1,52 @@
+<project name="g" default="compile" basedir=".">
+	<property name="build.dir" value="debug"/>
+	<property name="src.dir" value="."/>
+	<property name="lib.dir" value="lib"/>
+	<property name="target" value="Product.exe"/>
+	<target name="init">
+			<mkdir dir="${build.dir}"/>
+			<mkdir dir="${src.dir}"/>
+	</target>
+	
+	<target name="copylib">
+		<copy todir="${build.dir}">
+                <fileset basedir="${lib.dir}">
+                    <include name="*.*" />
+                </fileset>
+               </copy>
+	</target>
+
+	<target name="copyconfigfile">
+		<copy file="App.config" tofile="${build.dir}\${target}.config"/>
+	</target>
+
+	<target name="compile" depends="init,copylib,copyconfigfile">
+			<csc target="winexe" output="${build.dir}\${target}">						
+						<sources>
+								<include name="${src.dir}\**\*.cs" />
+						</sources>
+
+						<resources dynamicprefix="true" prefix="HelloWorld">
+						                    <include name="**/*.resx" />
+				                </resources>
+
+						<resources dynamicprefix="true" prefix="Product">
+							<include name="${src.dir}/hbm/*.xml" />
+						</resources>
+
+						<references>	
+								<include name="${build.dir}\DotNetMagic.dll"/>
+								<include name="${build.dir}\NHibernate.dll"/>
+						</references>
+			</csc>
+	</target>
+
+	<target name="run" depends="compile">
+		<exec program="${build.dir}\${target}" />
+	</target>
+	
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+	</target>
+	
+</project>

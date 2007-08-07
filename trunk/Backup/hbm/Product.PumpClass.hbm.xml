@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0">
+	<class name="Product.PumpClass, Product" table="PumpClass">
+		<id name="ID" column="ID" type="integer"> 
+			<generator class="identity" /> 
+		</id> 
+		<property name="PumpName" column="泵名称" type="String" length="50"/> 
+		<property name="PumpGClass" column="泵类型" type="String" length="50"/> 		
+	</class>
+</hibernate-mapping> 

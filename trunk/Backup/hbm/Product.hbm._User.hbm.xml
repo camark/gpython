@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0">
+	<class name="Product.hbm._User, Product" table="_Users">
+		<id name="ID" column="User_ID" type="integer"> 
+			<generator class="identity" /> 
+		</id> 
+		<property name="UserID" column="UserID" type="String"/> 		
+		<property name="Name" column="Name" type="String"/>
+		<property name="Sex" column="Sex" type="String"/>
+		<property name="IsOnline" column="IsOnLine" type="Byte"/>
+		<many-to-one name="Department" column="Department_ID" not-null="false" />
+	</class>
+</hibernate-mapping> 

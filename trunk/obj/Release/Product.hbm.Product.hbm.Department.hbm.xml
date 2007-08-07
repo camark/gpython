@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Product.hbm.Department, Product" table="Department">
+		<id name="ID" column="Department_ID" type="integer"> 
+			<generator class="identity" /> 
+		</id> 
+		<property name="DepartmentName" column="DepartmentName" type="String" length="50"/> 
+		<bag name="Users" inverse="true" lazy="false" cascade="none">
+			<key column="Department_ID" />
+			<one-to-many class="Product.hbm._User, Product" />
+		</bag>		
+	</class>
+</hibernate-mapping> 
