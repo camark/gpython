@@ -1,0 +1,66 @@
+﻿
+CREATE TABLE Department (
+	Department_id int IDENTITY (1, 1) NOT NULL ,
+	DepartmentName nvarchar (50) COLLATE Chinese_PRC_CI_AS NULL 
+)
+
+
+CREATE TABLE FileType (
+	id int IDENTITY (1, 1) NOT NULL ,
+	DrawType nvarchar (50) COLLATE Chinese_PRC_CI_AS NULL 
+) 
+
+
+CREATE TABLE IntoLib (
+	id int IDENTITY (1, 1) NOT NULL ,
+	UserName nvarchar (50) COLLATE Chinese_PRC_CI_AS NULL ,
+	InputTime datetime NULL ,
+	PumpType nvarchar (50) COLLATE Chinese_PRC_CI_AS NULL ,
+	PumpName nvarchar (50) COLLATE Chinese_PRC_CI_AS NULL ,
+	DrawType nvarchar (50) COLLATE Chinese_PRC_CI_AS NULL ,
+	FileName nvarchar (255) COLLATE Chinese_PRC_CI_AS NULL 
+) 
+
+
+CREATE TABLE OutLib (
+	ID int IDENTITY (1, 1) NOT NULL ,
+	UserName varchar (50) COLLATE Chinese_PRC_CI_AS NULL ,
+	PumpType varchar (50) COLLATE Chinese_PRC_CI_AS NULL ,
+	OutTime datetime NULL ,
+	PumpName varchar (50) COLLATE Chinese_PRC_CI_AS NULL ,
+	DrawType varchar (50) COLLATE Chinese_PRC_CI_AS NULL 
+) 
+
+
+CREATE TABLE PumpClass (
+	ID int IDENTITY (1, 1) NOT NULL ,
+	泵名称 nvarchar (50) COLLATE Chinese_PRC_CI_AS NULL ,
+	泵类型 nvarchar (50) COLLATE Chinese_PRC_CI_AS NULL 
+) 
+
+
+CREATE TABLE PumpType (
+	ID int IDENTITY (1, 1) NOT NULL ,
+	Name nvarchar (255) COLLATE Chinese_PRC_CI_AS NULL 
+) 
+
+
+CREATE TABLE Users (
+	User_ID int IDENTITY (1, 1) NOT NULL ,
+	UserID nvarchar (30) COLLATE Chinese_PRC_CI_AS NOT NULL ,
+	Name nvarchar (20) COLLATE Chinese_PRC_CI_AS NOT NULL ,
+	Sex char (1) COLLATE Chinese_PRC_CI_AS NOT NULL ,
+	PassWord nvarchar (10) COLLATE Chinese_PRC_CI_AS NULL ,
+	Department_ID int NULL ,
+	IsOnLine bit NULL 
+) 
+
+
+CREATE TABLE ProductVer (
+	Version_ID int IDENTITY (1, 1) NOT NULL ,
+	Version varchar (50) COLLATE Chinese_PRC_CI_AS NULL 
+) 
+
+
+
+

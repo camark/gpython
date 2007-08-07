@@ -1,0 +1,10 @@
+<project name="Product" default="Backup">
+	<property name="BackupPath" value="\\server\gm2\soft"/>
+	<target name="Backup">
+		<copy todir="${BackupPath}\Product">
+			<fileset basedir=".">
+				<include name="*.*"/>
+			</fileset>
+		</copy>
+	</target>
+</project>

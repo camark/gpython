@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Product">
+</Property><Property Name="解决方案文件" Value="D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Product.sln">
+</Property><Property Name="用户选项文件" Value="D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Product.suo">
+</Property><Property Name="Date" Value="2007年4月18日">
+</Property><Property Name="Time" Value="9:10">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Product.sln" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\Product.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Product.suo" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\Product.suo">
+</Event><Event ErrorLevel="0" Project="Product" Source="Product.csproj" Description="项目文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\Product.csproj">
+</Event><Event ErrorLevel="0" Project="Product" Source="Product.csproj.user" Description="项目用户文件成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\Product.csproj.user">
+</Event><Event ErrorLevel="0" Project="Product" Source="AboutForm.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\AboutForm.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="AddUser.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\AddUser.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="AnotherIntoLib.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\AnotherIntoLib.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="AssemblyInfo.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="ClassManager.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\ClassManager.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="CommonAdd.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\CommonAdd.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="DataAccess\DepartmentData.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\DataAccess\DepartmentData.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="DataAccess\DrawTypeData.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\DataAccess\DrawTypeData.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="DataAccess\IntoLibData.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\DataAccess\IntoLibData.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="DataAccess\OutLibData.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\DataAccess\OutLibData.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="DataAccess\PumpTypeData.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\DataAccess\PumpTypeData.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="DataAccess\UserData.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\DataAccess\UserData.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="DataAccess\VersionData.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\DataAccess\VersionData.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="DrawTypeManager.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\DrawTypeManager.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="DwgViewer.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\DwgViewer.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="Form1.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="Form2.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\Form2.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\Department.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\Department.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\FileType.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\FileType.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\GVersion.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\GVersion.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\IntoLib.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\IntoLib.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\OutLib.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\OutLib.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\PumpClass.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\PumpClass.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\PumpType.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\PumpType.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\_User.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\_User.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="IntoLibRec.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\IntoLibRec.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="OubLibFrm.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\OubLibFrm.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="OutLibForm.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\OutLibForm.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="SplashForm.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\SplashForm.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="UserManager.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\UserManager.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="Util\Comm.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\Util\Comm.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="Util\ExtractName.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\Util\ExtractName.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="Util\HibernateSession.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\Util\HibernateSession.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="Util\XConfig.cs" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\Util\XConfig.cs">
+</Event><Event ErrorLevel="0" Project="Product" Source="App.config" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\App.config">
+</Event><Event ErrorLevel="0" Project="Product" Source="App.ico" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="Product" Source="AboutForm.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\AboutForm.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="AddUser.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\AddUser.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="AnotherIntoLib.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\AnotherIntoLib.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="ClassManager.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\ClassManager.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="CommonAdd.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\CommonAdd.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="DrawTypeManager.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\DrawTypeManager.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="DwgViewer.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\DwgViewer.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="Form1.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="Form2.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\Form2.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\Product.FileType.hbm.xml" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\Product.FileType.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\Product.hbm.Department.hbm.xml" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\Product.hbm.Department.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\Product.hbm.GVersion.hbm.xml" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\Product.hbm.GVersion.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\Product.hbm.OutLib.hbm.xml" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\Product.hbm.OutLib.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\Product.hbm._User.hbm.xml" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\Product.hbm._User.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\Product.IntoLib.hbm.xml" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\Product.IntoLib.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\Product.PumpClass.hbm.xml" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\Product.PumpClass.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Product" Source="hbm\Product.PumpType.hbm.xml" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\hbm\Product.PumpType.hbm.xml">
+</Event><Event ErrorLevel="0" Project="Product" Source="IntoLibRec.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\IntoLibRec.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="OubLibFrm.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\OubLibFrm.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="OutLibForm.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\OutLibForm.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="SplashForm.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\SplashForm.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="UserManager.resx" Description="文件已成功备份为 D:\SolidWorks X64 2007 SP3.1\erp\Product.src\Product\Backup\UserManager.resx">
+</Event><Event ErrorLevel="0" Project="Product" Source="Product.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="Product" Source="Product.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Product.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="Product.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Product" Source="Product.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>
