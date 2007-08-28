@@ -82,3 +82,10 @@ bin\Debug\nunit.framework.xml
 obj\Debug\Product.AlertExistsFileForm.resources
 obj\Debug\Product.BackupDlg.resources
 obj\Release\Product.BackupDlg.resources
+bin\Debug\MySql.Data.dll
+bin\Debug\MySql.Data.xml
+bin\Release\MySql.Data.dll
+bin\Release\MySql.Data.xml
+obj\Release\Product.SelectMail.resources
+obj\Debug\Product.SelectMail.resources
+obj\Release\Product.ExportIntoLib.resources

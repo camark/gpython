@@ -55,6 +55,7 @@ namespace Product
         private TabPage tabPage5;
         private Label label5;
         private TextBox tbProductNo;
+        private CheckBox cbSomeOne;
 		/// <summary>
 		/// 必需的设计器变量。
 		/// </summary>
@@ -109,6 +110,9 @@ namespace Product
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbProductNo = new System.Windows.Forms.TextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
@@ -129,9 +133,7 @@ namespace Product
             this.menuItem7 = new System.Windows.Forms.MenuItem();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tbProductNo = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.cbSomeOne = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -281,6 +283,34 @@ namespace Product
             this.label4.TabIndex = 0;
             this.label4.Text = "泵型号:";
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.label5);
+            this.tabPage5.Controls.Add(this.tbProductNo);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(425, 64);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "制造编号";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 21);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "制造编号";
+            // 
+            // tbProductNo
+            // 
+            this.tbProductNo.Location = new System.Drawing.Point(77, 21);
+            this.tbProductNo.Name = "tbProductNo";
+            this.tbProductNo.Size = new System.Drawing.Size(316, 20);
+            this.tbProductNo.TabIndex = 0;
+            // 
             // listView1
             // 
             this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
@@ -413,38 +443,21 @@ namespace Product
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // tabPage5
+            // cbSomeOne
             // 
-            this.tabPage5.Controls.Add(this.label5);
-            this.tabPage5.Controls.Add(this.tbProductNo);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(425, 64);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "制造编号";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tbProductNo
-            // 
-            this.tbProductNo.Location = new System.Drawing.Point(77, 21);
-            this.tbProductNo.Name = "tbProductNo";
-            this.tbProductNo.Size = new System.Drawing.Size(316, 20);
-            this.tbProductNo.TabIndex = 0;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 21);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "制造编号";
+            this.cbSomeOne.AutoSize = true;
+            this.cbSomeOne.Location = new System.Drawing.Point(193, 108);
+            this.cbSomeOne.Name = "cbSomeOne";
+            this.cbSomeOne.Size = new System.Drawing.Size(74, 17);
+            this.cbSomeOne.TabIndex = 9;
+            this.cbSomeOne.Text = "特定人员";
+            this.cbSomeOne.UseVisualStyleBackColor = true;
             // 
             // IntoLibRec
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.ClientSize = new System.Drawing.Size(480, 486);
+            this.Controls.Add(this.cbSomeOne);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.listView1);
@@ -463,6 +476,7 @@ namespace Product
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		#endregion
@@ -723,8 +737,22 @@ namespace Product
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //ListViewItem item;
-            MailDrawing m_MailDrawing = new MailDrawing();
+            MailDrawing m_MailDrawing = null;
+
+            if (cbSomeOne.Checked == false)
+                m_MailDrawing = new MailDrawing();
+            else
+            {
+                SelectMail sm = new SelectMail();
+
+                if (sm.ShowDialog() == DialogResult.OK)
+                {
+                    m_MailDrawing = new MailDrawing(sm.Reciver);
+                }
+                else
+                    m_MailDrawing = new MailDrawing();
+            }
+
 
             foreach (ListViewItem item in listView1.CheckedItems)
             {

@@ -1,5 +1,5 @@
 using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
@@ -23,43 +23,47 @@ namespace Product
         {
             ISession session = ThreadLocalSession.CurrentSession();
 
-            SqlConnection conn = session.Connection as SqlConnection;
+            IDbConnection conn = session.Connection;
             //IQuery query=session.CreateQuery(textBox1.Text);
             //IList list=query.List();
 
             string strTemp = "";
             if (rbToday.Checked)
-                strTemp = "dd";
+                strTemp = "select * from intolib where to_days(inputtime) = to_days(now())";
             if (rbWeek.Checked)
-                strTemp = "ww";
+                strTemp = "select * from intolib where week(inputtime,1) = week(now(),1) and year(inputtime) = year(now())";
             if (rbMonth.Checked)
-                strTemp = "mm";
+                strTemp = "select * from intolib where month(inputtime) = month(curdate()) and year(inputtime) = year(now())";
 
-            string strSql = "select * from intolib where datediff(" + strTemp + ",inputtime,getdate())<1";
+            //string strSql = "select * from intolib where datesub(currentdate(),interval 1 " + strTemp + ")<=inputtime";
+            string strSql = strTemp;
 
             if (rbLastMonth.Checked)
-                strSql = "select * from intolib where datediff(mm,inputtime,getdate())<2";
+                strSql = "select * from intolib where month(inputtime)=month(curdate())-1 and year(inputtime)=year(now())";
 
             if (rbAll.Checked)
                 strSql = "select * from intolib";
-            SqlDataAdapter adapter = new SqlDataAdapter(strSql, conn);
+            //SqlDataAdapter adapter = new SqlDataAdapter(strSql, conn);
+            ISQLQuery adapter = session.CreateSQLQuery(strSql);
 
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
+            //DataTable dt = new DataTable();
+            //adapter.Fill(dt);
+            IList intolibs = adapter.AddEntity(typeof(IntoLib)).List();
             ThreadLocalSession.CloseCurrentSession();
 
             listView1.Items.Clear();
-            for (int i = 0; i < dt.Rows.Count; i++)
+            foreach(object o in intolibs)
             {
+                IntoLib il = o as IntoLib;
                 ListViewItem item = new ListViewItem();
-                item.Text = dt.Rows[i]["id"].ToString();
-                item.SubItems.Add(dt.Rows[i]["InputTime"].ToString());
-                item.SubItems.Add(dt.Rows[i]["UserName"].ToString());
-                item.SubItems.Add(dt.Rows[i]["PumpType"].ToString());
-                item.SubItems.Add(dt.Rows[i]["PumpName"].ToString());
-                item.SubItems.Add(dt.Rows[i]["DrawType"].ToString());
-                item.SubItems.Add(dt.Rows[i]["FileName"].ToString());
-                item.SubItems.Add(dt.Rows[i]["Version"].ToString());
+                item.Text = il.id.ToString();
+                item.SubItems.Add(il.InputTime.ToString());
+                item.SubItems.Add(il.User);
+                item.SubItems.Add(il.PumpType);
+                item.SubItems.Add(il.PumpName);
+                item.SubItems.Add(il.DrawType);
+                item.SubItems.Add(il.FileName);
+                item.SubItems.Add(il.Version.ToString());
 
                 listView1.Items.Add(item);
             }
