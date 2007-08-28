@@ -24,7 +24,12 @@ namespace Product.DataAccess
 			ICriteria cri_Ver=session.CreateCriteria(typeof(GVersion));
 			IList versions=cri_Ver.List();
 
-			GVersion gv=(GVersion)versions[0];
+            GVersion gv;
+			if(versions.Count>=1)
+                gv=(GVersion)versions[0];
+            else
+                return "1.0";
+
 			ThreadLocalSession.CloseCurrentSession();
 
 			return gv.Version;

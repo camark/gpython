@@ -36,6 +36,7 @@ namespace Product
         private ComboBox cmbPumpName;
         private TextBox tbProductNo;
         private Label label8;
+        private Button button2;
 		private bool bFindType=false;
 
 		public AnotherIntoLib()
@@ -73,6 +74,8 @@ namespace Product
             this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.wizardSelClass = new Crownwood.DotNetMagic.Controls.WizardPage();
+            this.tbProductNo = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.cmbPumpName = new System.Windows.Forms.ComboBox();
             this.cmbUser = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -88,8 +91,7 @@ namespace Product
             this.label7 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tbProductNo = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.wizardSelDraw.SuspendLayout();
             this.wizardSelClass.SuspendLayout();
             this.wizardFinish.SuspendLayout();
@@ -104,10 +106,10 @@ namespace Product
             this.wizardControl.HeaderPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.wizardControl.HeaderPanel.Location = new System.Drawing.Point(0, 0);
             this.wizardControl.HeaderPanel.Name = "_panelTop";
-            this.wizardControl.HeaderPanel.Size = new System.Drawing.Size(568, 109);
+            this.wizardControl.HeaderPanel.Size = new System.Drawing.Size(568, 108);
             this.wizardControl.HeaderPanel.TabIndex = 1;
             this.wizardControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.wizardControl.SelectedIndex = 0;
+            this.wizardControl.SelectedIndex = 1;
             this.wizardControl.Size = new System.Drawing.Size(568, 430);
             this.wizardControl.Title = "欢迎使用产品入库程序";
             // 
@@ -138,9 +140,10 @@ namespace Product
             this.wizardSelDraw.Location = new System.Drawing.Point(0, 0);
             this.wizardSelDraw.Name = "wizardSelDraw";
             this.wizardSelDraw.SelectBackColor = System.Drawing.Color.Empty;
+            this.wizardSelDraw.Selected = false;
             this.wizardSelDraw.SelectTextBackColor = System.Drawing.Color.Empty;
             this.wizardSelDraw.SelectTextColor = System.Drawing.Color.Empty;
-            this.wizardSelDraw.Size = new System.Drawing.Size(568, 248);
+            this.wizardSelDraw.Size = new System.Drawing.Size(568, 249);
             this.wizardSelDraw.SubTitle = "第一步：选择入库图纸";
             this.wizardSelDraw.TabIndex = 3;
             this.wizardSelDraw.ToolTip = "Page";
@@ -174,6 +177,7 @@ namespace Product
             // wizardSelClass
             // 
             this.wizardSelClass.CaptionTitle = "(Product)";
+            this.wizardSelClass.Controls.Add(this.button2);
             this.wizardSelClass.Controls.Add(this.tbProductNo);
             this.wizardSelClass.Controls.Add(this.label8);
             this.wizardSelClass.Controls.Add(this.cmbPumpName);
@@ -195,14 +199,29 @@ namespace Product
             this.wizardSelClass.Name = "wizardSelClass";
             this.wizardSelClass.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.wizardSelClass.SelectBackColor = System.Drawing.Color.Empty;
-            this.wizardSelClass.Selected = false;
             this.wizardSelClass.SelectTextBackColor = System.Drawing.Color.Empty;
             this.wizardSelClass.SelectTextColor = System.Drawing.Color.Empty;
-            this.wizardSelClass.Size = new System.Drawing.Size(568, 248);
+            this.wizardSelClass.Size = new System.Drawing.Size(568, 249);
             this.wizardSelClass.SubTitle = "第二步：选择类别";
             this.wizardSelClass.TabIndex = 4;
             this.wizardSelClass.ToolTip = "Page";
             this.wizardSelClass.Visible = false;
+            // 
+            // tbProductNo
+            // 
+            this.tbProductNo.Location = new System.Drawing.Point(145, 207);
+            this.tbProductNo.Name = "tbProductNo";
+            this.tbProductNo.Size = new System.Drawing.Size(277, 21);
+            this.tbProductNo.TabIndex = 14;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(38, 216);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 12);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "制造编号";
             // 
             // cmbPumpName
             // 
@@ -309,7 +328,7 @@ namespace Product
             this.wizardFinish.Selected = false;
             this.wizardFinish.SelectTextBackColor = System.Drawing.Color.Empty;
             this.wizardFinish.SelectTextColor = System.Drawing.Color.Empty;
-            this.wizardFinish.Size = new System.Drawing.Size(568, 248);
+            this.wizardFinish.Size = new System.Drawing.Size(568, 249);
             this.wizardFinish.SubTitle = "完成";
             this.wizardFinish.TabIndex = 5;
             this.wizardFinish.ToolTip = "Page";
@@ -334,21 +353,15 @@ namespace Product
             this.openFileDialog1.Filter = "AutoCAD Drawing(*.dwg)|*.dwg|Excel File(*.xls)|*.xls|All file(*.*)|*.*";
             this.openFileDialog1.Multiselect = true;
             // 
-            // label8
+            // button2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(38, 216);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 12);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "制造编号";
-            // 
-            // tbProductNo
-            // 
-            this.tbProductNo.Location = new System.Drawing.Point(145, 207);
-            this.tbProductNo.Name = "tbProductNo";
-            this.tbProductNo.Size = new System.Drawing.Size(277, 21);
-            this.tbProductNo.TabIndex = 14;
+            this.button2.Location = new System.Drawing.Point(442, 210);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Fill";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // AnotherIntoLib
             // 
@@ -641,6 +654,11 @@ namespace Product
             {
                 return "";
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tbProductNo.Text = tbProductNo.Text + "EB0730";
         }
 	}
 }

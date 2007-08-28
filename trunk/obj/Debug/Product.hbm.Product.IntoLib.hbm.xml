@@ -11,5 +11,6 @@
 		<property name="DrawType" column="DrawType" type="String" length="50"/>
 		<property name="FileName" column="FileName" type="String" length="255"/>
 		<property name="Version"  column="Version"  type="integer"/>
+		<property name="ProductNo" column="ProductNo" type="String" length="255"/>
 	</class>
 </hibernate-mapping> 

@@ -58,6 +58,8 @@ namespace Product
 		private DockingManager _dockingManager=null;
         private MenuItem menuItem21;
         private MenuItem menuItem22;
+        private MenuItem menuItem23;
+        private MenuItem menuItem24;
 		private System.Windows.Forms.ListView listView1=null;
 
 		public MainForm()
@@ -132,6 +134,8 @@ namespace Product
             this.menuItem17 = new System.Windows.Forms.MenuItem();
             this.menuItem10 = new System.Windows.Forms.MenuItem();
             this.menuItem18 = new System.Windows.Forms.MenuItem();
+            this.menuItem21 = new System.Windows.Forms.MenuItem();
+            this.menuItem22 = new System.Windows.Forms.MenuItem();
             this.menuItem11 = new System.Windows.Forms.MenuItem();
             this.menuItem12 = new System.Windows.Forms.MenuItem();
             this.menuItem13 = new System.Windows.Forms.MenuItem();
@@ -146,8 +150,8 @@ namespace Product
             this.statusBarPanel2 = new System.Windows.Forms.StatusBarPanel();
             this.statusBarPanel3 = new System.Windows.Forms.StatusBarPanel();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.menuItem21 = new System.Windows.Forms.MenuItem();
-            this.menuItem22 = new System.Windows.Forms.MenuItem();
+            this.menuItem23 = new System.Windows.Forms.MenuItem();
+            this.menuItem24 = new System.Windows.Forms.MenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel3)).BeginInit();
@@ -326,6 +330,21 @@ namespace Product
             this.menuItem18.Text = "HSQL查询";
             this.menuItem18.Click += new System.EventHandler(this.menuItem18_Click);
             // 
+            // menuItem21
+            // 
+            this.menuItem21.Index = 2;
+            this.menuItem21.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem22,
+            this.menuItem23,
+            this.menuItem24});
+            this.menuItem21.Text = "(&T)工具";
+            // 
+            // menuItem22
+            // 
+            this.menuItem22.Index = 0;
+            this.menuItem22.Text = "备份资料";
+            this.menuItem22.Click += new System.EventHandler(this.menuItem22_Click);
+            // 
             // menuItem11
             // 
             this.menuItem11.Index = 3;
@@ -427,18 +446,16 @@ namespace Product
             this.splitter1.TabIndex = 5;
             this.splitter1.TabStop = false;
             // 
-            // menuItem21
+            // menuItem23
             // 
-            this.menuItem21.Index = 2;
-            this.menuItem21.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this.menuItem22});
-            this.menuItem21.Text = "(&T)工具";
+            this.menuItem23.Index = 1;
+            this.menuItem23.Text = "-";
             // 
-            // menuItem22
+            // menuItem24
             // 
-            this.menuItem22.Index = 0;
-            this.menuItem22.Text = "备份资料";
-            this.menuItem22.Click += new System.EventHandler(this.menuItem22_Click);
+            this.menuItem24.Index = 2;
+            this.menuItem24.Text = "数据导出";
+            this.menuItem24.Click += new System.EventHandler(this.menuItem24_Click);
             // 
             // MainForm
             // 
@@ -666,6 +683,13 @@ namespace Product
             BackupDlg bd = new BackupDlg();
             bd.MdiParent = this;
             bd.Show();
+        }
+
+        private void menuItem24_Click(object sender, EventArgs e)
+        {
+            ExportIntoLib eil = new ExportIntoLib();
+            eil.MdiParent = this;
+            eil.Show();
         }
 	}
 }

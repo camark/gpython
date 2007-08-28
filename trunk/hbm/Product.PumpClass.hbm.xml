@@ -4,7 +4,7 @@
 		<id name="ID" column="ID" type="integer"> 
 			<generator class="identity" /> 
 		</id> 
-		<property name="PumpName" column="泵名称" type="String" length="50"/> 
-		<property name="PumpGClass" column="泵类型" type="String" length="50"/> 		
+		<property name="PumpName" column="pumpname" type="String" length="50"/> 
+		<property name="PumpGClass" column="pumptype" type="String" length="50"/> 		
 	</class>
 </hibernate-mapping> 
